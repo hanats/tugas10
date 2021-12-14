@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function hasilrupiah(){
+            let dollar = document.getElementById("dollar").value;
+            const rupiah = 14650;
+            let total = dollar * rupiah;
+            let hasil_rupiah = document.getElementById("hasil");
+            hasil_rupiah.innerHTML = "Rp." + total;
+        }
+    </script>
+</head>
+<body>
+    <h3>Menghitung Nilai kurs Dollar</h3>
+    <p>Masukan Nilai Dollar</p><input type="number" value="" id="dollar" size="10">
+    <button onclick="hasilrupiah()">Hasil</button><span id="hasil"></span>
+</body>
+</html>

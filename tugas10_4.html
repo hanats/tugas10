@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function hasilperjumlahan(){
+            let bil1 = document.getElementById("bil1").value;
+            let bil2 = document.getElementById("bil2").value;
+            perjumlahan = bil1 + bil2;
+            document.getElementById("hasil") = perjumlahan;
+        }
+    </script>
+</head>
+<body>
+    <h3>Masukan Angka</h3>
+    <input type="number" value="" id="bil1" size="10" onchange="hasilperjumlahan()">
+    <p>+</p><input type="number" value="" id="bil2" size="10">
+    <p>=</p>
+    <input type="text" id="hasil">
+</body>
+</html>
